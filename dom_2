@@ -1,0 +1,27 @@
+let broevi = [1, 2, 3, 4, 5];
+
+let res =0;
+
+let resultDiv = document.getElementById("result");
+
+for (let i=0; i<5; i++){
+     res +=broevi[i];
+}
+
+
+// if(!isNaN(res)){
+//     resultDiv.innerHTML = `<h3> ${res}</h3>`
+//   } else {
+//     resultDiv.innerHTML = `<h3> Sorry! Wrong input! Refresh the page again! </h3>`
+
+
+
+//   }
+
+
+  if(!isNaN(res)){
+      
+    resultDiv.innerHTML = `<h3> ${broevi.join("+") }= ${res} </h3>`
+  } else {
+    resultDiv.innerHTML = `<h3> Sorry! Wrong input! Refresh the page again! </h3>`
+  }
