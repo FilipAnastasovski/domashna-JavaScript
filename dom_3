@@ -1,0 +1,22 @@
+let resultDiv1 = document.getElementById("result1");
+let resultDiv2 = document.getElementById("result2");
+let resultDiv3 = document.getElementById("result3");
+let ime = prompt("Please enter name of recipe");
+
+  resultDiv1.innerHTML = `<h1> ${ime}</h1>`;
+
+  let kolichina = parseInt(prompt("Please enter how many ingredients"));
+
+  resultDiv2.innerHTML = `<h3> ${kolichina} sostojki sto se koristat </h3>`;
+
+  let list = [];
+
+  for(let i=0;i<kolichina;i++){
+
+    let imeSostojka = prompt("Please enter name of ingredients");
+
+    list[i]=imeSostojka;
+
+  resultDiv3.innerHTML = `<p> ${list.join(",")}</p>`;
+
+}
